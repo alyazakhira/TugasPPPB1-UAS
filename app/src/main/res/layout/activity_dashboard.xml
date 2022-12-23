@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/dash_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mode Edit"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tambah"
+        android:id="@+id/dash_add_btn"
+        android:layout_below="@+id/dash_title"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berikut ini berita yang Anda unggah."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@+id/dash_add_btn"
+        android:id="@+id/dash_sec_title"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* Tekan untuk edit."
+        android:id="@+id/info_text_1"
+        android:layout_weight="1"
+        android:layout_below="@+id/dash_sec_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* Tekan lama untuk hapus."
+        android:id="@+id/info_text_2"
+        android:layout_weight="1"
+        android:layout_below="@id/info_text_1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_text_2"
+        android:id="@+id/rv_dash_sv"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dash_news_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </ScrollView>
+
+</RelativeLayout>

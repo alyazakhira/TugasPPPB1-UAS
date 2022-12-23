@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/main_signup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/main_id_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_signup_title"
+        android:layout_marginBottom="5dp"
+        android:text="ID"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/main_id_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/main_id_header"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/form_style"
+        android:hint="ID"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/main_uname_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_id_edit"
+        android:layout_marginBottom="5dp"
+        android:text="Username"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/main_uname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/main_uname_header"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/form_style"
+        android:hint="username"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/main_pass_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_uname_edit"
+        android:layout_marginBottom="5dp"
+        android:text="Password"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/main_pass_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/main_pass_header"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/form_style"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/m_signup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:text="SIgn up" />
+
+</RelativeLayout>

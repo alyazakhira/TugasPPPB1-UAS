@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".AddNewsActivity">
+
+    <TextView
+        android:id="@+id/addn_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add News"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addn_id_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addn_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="ID"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addn_id_edt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/addn_id_header"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/form_style"
+        android:hint="00"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/addn_title_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addn_id_edt"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Title"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addn_title_edt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/addn_title_header"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/form_style"
+        android:hint="title"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/addn_cat_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addn_title_edt"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Category"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addn_cat_edt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/addn_cat_header"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/form_style"
+        android:hint="category"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/addn_age_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addn_cat_edt"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Age"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addn_age_edt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/addn_age_header"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/form_style"
+        android:hint="00"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/addn_content_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addn_age_edt"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Content"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addn_content_edt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/addn_content_header"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/form_style"
+        android:hint="write here"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/addn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="submit" />
+
+</RelativeLayout>
